@@ -1,4 +1,5 @@
 #include<stdio.h>
+void pal(int m);
 /*
 void main(){
     char s[]="madam",f[5],b[5];
@@ -47,3 +48,33 @@ void main(){
     }
 }
 */
+
+/*
+//closest palindrome number;    i/p=1234     o/p=1221
+
+void pal(int m){
+    int n=m;
+    int i=0;
+    while(n!=0){
+            i=(i*10)+(n%10);
+            n=n/10;
+        
+    }
+    if(m==i){
+        printf("\n%d",n);
+    }
+    else{
+        m=m-1;
+        printf("\n%d",n);
+        pal(m);
+    }
+    }
+
+void main(){
+    int m=1234;
+    pal(m);
+}
+
+*/
+
+
