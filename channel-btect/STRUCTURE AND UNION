@@ -1,0 +1,10 @@
+STRUCTURE:
+-- members of the structure should not be initalized
+-- different between structure and Union:
+    ``the memory allocation in Structure is calc with each single variable, 
+      whereas in Union the memory allocation depents on the large sized variable among the Union list only.
+
+
+UNION:
+-- The values are overlaped in the memory, as the total memory capacity is the maximum memory amongthe variables.
+-- 

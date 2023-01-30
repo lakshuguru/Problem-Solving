@@ -1,0 +1,11 @@
+-- pointer variable must be initalized
+-- pointer w/o any initialization is wild pointer
+-- syntax:   dtype *ptr_var 
+-- pointer var can't be initalized to a integer value, but can be init with the value 0
+   wrong: int *p=10
+   correct: int *p=0
+-- all the address are whole number; size of the pointer is always the integer
+-- sizeof the pointer is fixedd wrt the compiler
+-- void pointeris a centralized pointer
+-- null pointer is empty
+-- 
