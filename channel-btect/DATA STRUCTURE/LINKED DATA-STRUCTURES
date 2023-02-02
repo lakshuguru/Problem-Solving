@@ -1,0 +1,90 @@
+TIME COMPLEXITY:
+
+
+
+
+linked list:
+   --singlel linked list         node- data & pointer(next address)
+   --doubly linked list          node- pointer(previous address) & data & pointer(next address)
+
+the memory allocation function like malloc, calloc returns a pointer to the void pointer
+ADT (abstract datatype):
+    1. list
+    2. stack
+    3. queue
+
+-- underflow condition occurs when there is an access to unavailable data structure
+
+NODE structure:
+struct node{
+    int data;
+    struct node *next;
+}
+CREATETION:
+--head is the single entity with strting address(no pointer or data)
+NODE structure:
+struct node{
+    int data;
+    struct node *next;
+}*stnode;
+
+INSERTION:
+-- at the beginning:
+struct *node;
+newnode= (struct node *)malloc(sizeof(struct node));
+newnode->data=4;
+newnode->next=head;
+head=newnode;
+-- at the middle
+[800]------>[(15)(1500)]------->[(5)(900)]------>[(9)(\0)]
+ head           800                1500       |     900
+                                              |
+ newnode before last node:                    |
+                                  [(56)(900)]--
+
+struct *newnode;
+newnode=malloc(sizeof(struct node));
+newnode->data=4;
+struct node *temp=head;
+int pos=3
+for(int i=2;i<pos;i++){
+    if(temp->next!=NULL){
+        temp=temp->next;
+    }
+}
+
+
+-- at the end
+struct *newnode;
+newnode=malloc(sizeof(struct node));
+newnode->data=4;
+struct node *temp=head;
+int pos=3
+while(temp->next!=NULL){
+    temp=temp->next;
+}
+temp->next=newnode;
+newnode->next=NULL:
+
+
+DOUBLY LINKED LIST:
+-- can traverse in both the directions
+-- the last node and the head node contains null 
+-- there is a difference b/w doubly and circular linked list
+
+
+node structure:
+struct node{
+    int data;
+    struct node *next;
+    struct node *prev;
+};
+
+node insertion at the beginning:
+if(head==NULL){
+    ptr->next=NULL;
+    ptr->prev=NULL;
+    ptr->data=item;
+    head=ptr;
+}
+

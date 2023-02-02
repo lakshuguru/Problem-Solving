@@ -8,4 +8,12 @@
 -- sizeof the pointer is fixedd wrt the compiler
 -- void pointeris a centralized pointer
 -- null pointer is empty
--- 
+-- * and & get cancelled (like 1:1)
+-- %u to print the address
+
+
+CONSTANT
+types(4):
+int-whole numb 
+real-double
+float

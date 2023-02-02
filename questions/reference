@@ -93,3 +93,20 @@ Output: 1
 Explanation: 1, 2 or 2, 3 are the only consecutive 
 buildings with increasing heights.
 
+DATA STRUCTURE QUESTIONS:
+
+1. Given a singly linked list ... remove duplicate nodes from the linked list.
+Input:
+4
+2 2 4 5
+Output:
+2 4 5
+
+
+2. given a linked list and a key, find the last occurence of the key and delete it from the linked list. the list may have duplicate values.
+
+Input :
+6
+1 21 3 5 21 10
+Output:
+21

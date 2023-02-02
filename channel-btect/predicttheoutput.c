@@ -104,4 +104,80 @@ void main(){
     printf("%d",*(*p+4));
 }
 */
+/*
+int main(){
+    int a=25,b;
+    int *p,*q;
+    p=&a;
+    q=&b;
+    b=36;
+    printf("%d %d",*p,*q);
+}
+*/
+/*
+void main(){
+    int *p=2;
+    printf("%d",sizeof(p));
+}
+*/
+/*
+void main(){
+    int a=36;
+    int *p;
+    p=&a;
+    printf("%u %u ",*&p,&*p);    // * and & get cancelled
+}
+*/
+/*
+void main(){
+    int a,b,c;
+    char *p=0;
+    int *q=0;
+    double *r=0;
+    a=(int)(p+1);
+    b=(int)(q+1);
+    c=(int)(r+1);
+    printf("%d  %d  %d",a,b,c);
+}
+*/
+/*
+void main(){
+    const int a=5;
+    const int *p;
+    p=&a;
+    *p=10;
+    printf("%d\n",a);
+    }
+*/
+/*
+void main(){
+    printf("%d",sizeof(void));
+}
+*/
+/*
+void main(){
+    printf("%d",sizeof(volatile)+sizeof(const));    //dtype modifiers
+}
+*/
+/*
+void main(){
+    float x=1.1;
+    double y=1.1;
+    if(x==y){        //(x==1.1f)
+        printf("equal");
+    }
+    else{  
+        printf("unequal");      // value in the memory tend to change due to variant dtype 
+    }
+}
+*/
+/*
+void main(){
+    //linker error: only comes in extern dtype  
+    extern n;   //external dtype 
+    //n=9;       //this leads to linker error 
+    printf("%d",n);
+}
+int n=36;
+*/
 

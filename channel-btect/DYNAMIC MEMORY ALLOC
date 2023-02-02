@@ -1,0 +1,26 @@
+-- memory is partitioned
+-- permanent storage: global var, prog instruction,
+
+
+types: 
+malloc- all memory allocation is done in bytes(contains garbage value)
+calloc- contiguous memory allocaion(contains 0 as default value)
+realloc- malloc or calloc must be used in prior
+free- releases the specified block of memory bck to the system(indepent only but w/o any prior memory allocation, it is useless)
+
+DATA STRUCTUR:
+1.primitive(data types)
+2.non-primitive
+    1.linear:
+        static(array)
+        dynamic(linked list; doubly linked list, stack, queue)
+    2.non-linear
+        tree
+        graph
+
+
+
+performance:
+worst case ;    average case ;  best case
+1.time complexity- how many times the statement gets executed
+2. space complexity- 

@@ -1,0 +1,44 @@
+STACK:
+-- last in first out
+-- linear data struction
+-- insertion and deletion takes place at top only
+-- operations: push(insert) and pop(delete)
+-- ordered list, and a recursive data structure having pointer to its top element
+-- position and status:
+    -1      empty
+    0       only one element in the STACK
+    n-1     stack is full
+    n       overflow 
+
+PUSH:
+void push(int v, int n){
+    if(top==n){
+        printf("\n overflow");
+    }
+else{
+    top=top+1;
+    stack[top]=v;
+}
+}
+
+-- why incrementing top and insert?     
+    to move the top pointer to the above position
+
+POP:
+int pop(){
+    if(top==-1){
+        printf("underflow");
+        return 0;
+    }
+else{
+    return stack[top--];
+}
+}
+void show(){
+    for(i=top;i>=0;i++){
+        printf("%d\n",stack[i]);
+    }
+    if(top==1){
+        printf("stack is empty");
+    }
+}
