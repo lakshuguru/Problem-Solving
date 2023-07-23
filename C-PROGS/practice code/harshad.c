@@ -1,3 +1,5 @@
+//harshad number: the numb divisible by sum of it's digit
+
 #include<stdio.h>
 void main(){
     int m=1729,s,i=0;int n=m;

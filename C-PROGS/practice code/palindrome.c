@@ -49,7 +49,7 @@ void main(){
 }
 */
 
-/*
+
 //closest palindrome number;    i/p=1234     o/p=1221
 
 void pal(int m){
@@ -61,11 +61,11 @@ void pal(int m){
         
     }
     if(m==i){
-        printf("\n%d",n);
+        printf("\n%d",i);
     }
     else{
         m=m-1;
-        printf("\n%d",n);
+        printf("\n%d",i);
         pal(m);
     }
     }
@@ -75,6 +75,6 @@ void main(){
     pal(m);
 }
 
-*/
+
 
 
